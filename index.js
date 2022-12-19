@@ -8,7 +8,7 @@ const { response, response2 } = require("./response");
 app.use(bodyParser.json());
 
 // Get
-app.get("/produk", (req, res) => {
+app.get("/", (req, res) => {
   const sql = "SELECT * FROM product";
   db.query(sql, (error, result) => {
     console.log("result", result);
