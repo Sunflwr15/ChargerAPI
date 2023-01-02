@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   //   if (error) throw error;
   //   response(200, result, "Berhasil mendapatkan list produk", res);
   // });
-  db.res("TES")
+  res.send("TES");
 });
 
 // app.get("/produk/:id", (req, res) => {
