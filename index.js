@@ -9,11 +9,12 @@ app.use(bodyParser.json());
 // Get
 app.get("/", (req, res) => {
   const sql = "SELECT * FROM user";
-  db.query(sql, (error, result) => {
-    console.log("result", result);
-    if (error) throw error;
-    response(200, result, "Berhasil mendapatkan list produk", res);
-  });
+  // db.query(sql, (error, result) => {
+  //   console.log("result", result);
+  //   if (error) throw error;
+  //   response(200, result, "Berhasil mendapatkan list produk", res);
+  // });
+  db.res("TES")
 });
 
 // app.get("/produk/:id", (req, res) => {
